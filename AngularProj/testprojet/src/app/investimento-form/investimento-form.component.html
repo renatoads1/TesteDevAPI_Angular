@@ -1,0 +1,19 @@
+<form [formGroup]="form" (ngSubmit)="enviar()">
+  <label>
+    Valor Inicial:
+    <input type="number" formControlName="valorInicial">
+  </label>
+  <br>
+  <label>
+    Prazo (meses):
+    <input type="number" formControlName="prazoMeses">
+  </label>
+  <br>
+  <button type="submit">Enviar</button>
+</form>
+
+<div *ngIf="resultado">
+  <h3>Resultado:</h3>
+  <p>Valor Bruto: {{ resultado.valorBruto }}</p>
+  <p>Valor Líquido: {{ resultado.valorLiquido }}</p>
+</div>
