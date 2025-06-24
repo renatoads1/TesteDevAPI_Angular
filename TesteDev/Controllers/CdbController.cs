@@ -16,7 +16,7 @@ namespace TesteDev.Controllers
         }
 
         [HttpPost("calcular")]
-        public IActionResult Calcular([FromBody] CdbRequest request)
+        public IActionResult Calcular([FromBody] CdbRequest? request)
         {
             if (request == null)
                 return BadRequest("Request inválido.");
