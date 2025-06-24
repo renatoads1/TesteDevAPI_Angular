@@ -16,16 +16,24 @@ namespace TesteDev.Controllers
         }
 
         [HttpPost("calcular")]
-        public ActionResult<CdbResult> Calcular([FromBody] CdbRequest request)
+        public IActionResult Calcular([FromBody] CdbRequest request)
         {
+            if (request == null)
+                return BadRequest("Request inválido.");
+
             try
             {
-                var resultado = _cdbCalculatorService.Calcular(request);
-                return Ok(resultado);
+                var result = _cdbCalculatorService.Calcular(request);
+                return Ok(result);
             }
             catch (ArgumentException ex)
             {
                 return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Retorne uma mensagem genérica para exceções inesperadas
+                return BadRequest("Erro inesperado: " + ex.Message);
             }
         }
     }
