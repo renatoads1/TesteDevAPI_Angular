@@ -220,7 +220,7 @@ var assemblies = [
       { "name": "TesteDev.Domain.TaxaCdb", "rp": "TesteDev_TaxaCdb.html", "cl": 0, "ucl": 2, "cal": 2, "tl": 8, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "TesteDev.Models.CdbRequest", "rp": "TesteDev_CdbRequest.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 8, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "TesteDev.Models.CdbResult", "rp": "TesteDev_CdbResult.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 8, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "TesteDev.Services.CdbCalculatorService", "rp": "TesteDev_CdbCalculatorService.html", "cl": 20, "ucl": 0, "cal": 20, "tl": 33, "cb": 6, "tb": 6, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "TesteDev.Services.CdbCalculatorService", "rp": "TesteDev_CdbCalculatorService.html", "cl": 22, "ucl": 0, "cal": 22, "tl": 35, "cb": 8, "tb": 8, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
 ];
 

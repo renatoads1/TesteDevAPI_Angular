@@ -7,6 +7,8 @@ namespace TesteDev.Services
     {
         public CdbResult Calcular(CdbRequest request)
         {
+            if (request == null)
+                throw new ArgumentNullException(nameof(request));
             if (request.ValorInicial <= 0)
                 throw new ArgumentException("Valor inicial deve ser positivo.");
             if (request.PrazoMeses < 2)
